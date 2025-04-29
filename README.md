@@ -9,10 +9,10 @@ _A streamlined tool to automate your lighting schedule via a web dashboard, usin
 │   └── main.ino
 ├── backend/            # Python WebSocket server
 │   └── server.py
-├── frontend/           # User interface (HTML, CSS, JS)
+├── ui/           # User interface (HTML, CSS, JS)
 │   ├── index.html
 │   ├── script.js
-│   └── style.css
+│   └── styles.css
 ├── subscriber/         # MQTT listener and Arduino driver (Python)
 │   └── subscriber.py
 ├── requirements.txt    # Python dependencies
@@ -20,7 +20,7 @@ _A streamlined tool to automate your lighting schedule via a web dashboard, usin
 ```
 
 ## 🔧 How It Works
-1. **Frontend** (`frontend/`)
+1. **UI** (`ui/index.html, script.js, styles.css`)
    - Web page where users set “ON” and “OFF” times (HH:MM).
    - Sends schedule over WebSocket to the backend.
 
@@ -40,13 +40,13 @@ _A streamlined tool to automate your lighting schedule via a web dashboard, usin
 
 ## 📸 Screenshots
 **Web UI**
-![Scheduler Interface](./assets/ui.png)
+![Scheduler Interface](./images/ui.png)
 
 **Backend Logs**
-![Server Log](./assets/light-2.png)
+![Server Log](./images/backend.png)
 
 **Subscriber Output**
-![Subscriber Log](./assets/light-2.png)
+![Subscriber Log](./images/subscriber.png)
 
 ## 🚀 Installation & Setup
 
